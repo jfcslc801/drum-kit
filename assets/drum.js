@@ -1,7 +1,7 @@
 //keydown event listener
-window.addEventListener('keydown', function (e) {
+window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
-    // select corresponding key
+        // select corresponding key
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
     if (!audio) return; //stops function
     audio.currentTime = 0; //resets audio
@@ -10,8 +10,8 @@ window.addEventListener('keydown', function (e) {
     // console.log(key);
 });
 
-//remove transition from vent
-function removeTransition(e){
+//remove transition from event
+function removeTransition(e) {
     console.log(e)
 }
 

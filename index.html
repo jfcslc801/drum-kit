@@ -2,64 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <ul class="set keys">
+        <li data-key="65" class="white b key"></li>
+        <li data-key="83" class="black as key"></li>
+        <li data-key="68" class="white a key"></li>
+        <li data-key="70" class="black gs key"></li>
+        <li data-key="71" class="white g key"></li>
+        <li data-key="72" class="black fs key"></li>
+        <li data-key="74" class="white f key"></li>
+        <li data-key="75" class="white e key"></li>
+        <li data-key="76" class="black ds key"></li>
+        <li data-key="81" class="white d key"></li>
+        <li data-key="87" class="black cs key"></li>
+        <li data-key="69" class="white c key"></li>
+    </ul>
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
-
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
-  <script src="assets/drum.js">
-  </script>
+    <audio data-key="65" src="sounds/220-A.mp3"></audio>
+    <audio data-key="83" src="sounds/246-B.mp3"></audio>
+    <audio data-key="68" src="sounds/261-C.mp3"></audio>
+    <audio data-key="70" src="sounds/277-C-sharp.mp3"></audio>
+    <audio data-key="71" src="sounds/293-D.mp3"></audio>
+    <audio data-key="72" src="sounds/311-D-sharp.mp3"></audio>
+    <audio data-key="74" src="sounds/329-E.mp3"></audio>
+    <audio data-key="75" src="sounds/349-F.mp3"></audio>
+    <audio data-key="76" src="sounds/369F-sharp.mp3"></audio>
+    <audio data-key="81" src="sounds/391-G.mp3"></audio>
+    <audio data-key="87" src="sounds/415-G-sharp.mp3"></audio>
+    <audio data-key="69" src="sounds/440-A.mp3"></audio>
+    <script src="assets/drum.js">
+    </script>
 </body>
 
 </html>
