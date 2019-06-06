@@ -8,6 +8,7 @@ window.addEventListener('keydown', function(e) {
     audio.play()
     key.classList.add('playing'); //add css class to event listener
     // console.log(key);
+    key.classList.add('active')
 });
 
 //remove transition from event
@@ -17,3 +18,11 @@ function removeTransition(e) {
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+
+function play(e) {
+    const audio = document.querySelector('audio[data-key]')
+    if (!audio) return; //stops function
+    audio.currentTime = 0; //resets audio
+    audio.play()
+}
