@@ -18,10 +18,15 @@ html {
 }
 
 
-/* kbd {
-display: block;
-font-size: 4rem;
-} */
+
+.keys {
+    display: flex;
+  }
+  
+  .key {
+    transition: all .07s ease;
+  }
+
 
 .sound {
     font-size: 1.2rem;
@@ -30,10 +35,6 @@ font-size: 4rem;
     color: #ffc600;
 }
 
-
-/* * {
-box-sizing:border-box
-} */
 
 body {
     margin: 0;
