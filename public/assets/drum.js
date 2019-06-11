@@ -1,3 +1,12 @@
+//hints query selector
+hints = document.querySelectorAll(".hints");
+
+function hintsOn(e, index) {
+    e.setAttribute("style", "transition-delay:" + index * 50 + "ms");
+}
+
+hints.forEach(hintsOn);
+
 //keydown event listener
 function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
@@ -31,4 +40,6 @@ function playSound2(e) {
     console.log(e)
 }
 window.addEventListener('click', playSound2);
+
+
 

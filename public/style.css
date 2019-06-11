@@ -4,6 +4,8 @@ background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
 background-size: cover;
 } */
 
+
+
 body,
 html {
     margin: 0;
@@ -111,3 +113,20 @@ ul li:first-child {
 ul li:last-child {
     border-radius: 0 5px 5px 5px
 }
+
+
+
+.hints {
+    display: block;
+
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 7px;
+    transition: opacity .3s ease-out;
+    font-size: 20px;
+  }
+
+  .keys:hover .hints {
+    opacity: 1;
+  }
