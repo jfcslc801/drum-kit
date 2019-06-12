@@ -4,7 +4,6 @@ hints = document.querySelectorAll(".hints");
 function hintsOn(e, index) {
     e.setAttribute("style", "transition-delay:" + index * 50 + "ms");
 }
-
 hints.forEach(hintsOn);
 
 //keydown event listener
@@ -23,7 +22,7 @@ window.addEventListener('keydown', playSound);
 //remove transition from event
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
-    // console.log(e.propertyName);
+    console.log(e.propertyName);
     this.classList.remove('playing')
 }
 
@@ -49,4 +48,5 @@ function playSound2(e) {
     audio.play() //play audio
 }
 window.addEventListener('click', playSound2);
+
 
