@@ -33,13 +33,19 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 //onclick keynote function 
 function playSound2(e) {
-    const audio = document.querySelector('audio')
+    console.log('value: ', e.target.classList.contains('hints'))
+    let audio = document.querySelector(`audio[data-key="${e.target.attributes[0].value}"]`)
+    // If the clicked item is an `.hints` get the parent `audio[data-keys]`
+    if (e.target.classList.contains('hints')) {
+        console.log('TEST')
+        // Get the parent with the `audio[data-keys]` class
+        var parent = e.target.parentElement;
+        audio = document.querySelector(`audio[data-key="${parent.attributes[0].value}"]`)
+        console.log('parent: ', parent.attributes[0].value)
+    }
     if (!audio) return; //stops function
     audio.currentTime = 0; //resets audio
     audio.play()
-    console.log(e)
 }
 window.addEventListener('click', playSound2);
-
-
 
